@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav"
+    app:startDestination="@id/fragmentStar">
+
+    <fragment
+        android:id="@+id/fragmentPlanet"
+        android:name="com.nna.spaceapl.fragment.PlanetFragment"
+        android:label="fragment_planet"
+        tools:layout="@layout/fragment_planet" />
+    <fragment
+        android:id="@+id/fragmentStar"
+        android:name="com.nna.spaceapl.fragment.StarFragment"
+        android:label="fragment_star"
+        tools:layout="@layout/fragment_star" />
+</navigation>

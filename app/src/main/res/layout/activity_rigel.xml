@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detilstar.RigelActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_height="192dp"
+        android:layout_width="match_parent">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:toolbarId="@+id/toolbar"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+
+            app:contentScrim="?attr/colorPrimary">
+
+
+            <ImageView
+                android:id="@+id/img_Detail_planet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/rigel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_width="match_parent">
+
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        tools:ignore="SpeakableTextPresentCheck">
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            tools:context=".Detail.DetailNewsIndoActivity">
+
+            <TextView
+                android:id="@+id/tv_DetailPlanet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rigel"
+                android:layout_marginLeft="12dp"
+                android:background="@color/white"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/white"
+                android:text="Rigel /ˈraɪdʒəl/, β Orionis (Huruf latin: Beta Orionis, disingkat Beta Ori, β Ori), adalah bintang paling terang di rasi Orion dan bintang paling terang ketujuh di langit malam, dengan magnitudo visual 0.18. Meskipun memiliki penamaan Bayer 'beta', Rigel hampir selalu lebih terang daripada Alpha Orionis (Betelgeuse). Pada 2016, International Astronomical Union (IAU) memasukkan nama 'Rigel' dalam Katalog Nama Bintang IAU. Menurut IAU, nama yang tepat ini hanya berlaku untuk komponen utama A dari sistem Rigel. Dalam katalog astronomi historis , sistem ini terdaftar dengan berbagai variasi sebagai H II 33, Σ 668, β 555, atau ADS 3823. Untuk kesederhanaan, sahabat Rigel dapat disebut sebagai Rigel B, C, dan D; IAU menggambarkan nama-nama seperti 'julukan yang berguna' yang 'tidak resmi'. Dalam katalog komprehensif modern, seluruh sistem bintang berganda dikenal sebagai WDS 05145-0812 atau CCDM 05145-0812."
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_DetailPlanet" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

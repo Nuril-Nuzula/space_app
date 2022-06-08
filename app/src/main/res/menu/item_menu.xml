@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:icon="@drawable/planet_img"
+        android:id="@+id/fragmentPlanet"
+        android:title="Planet" />
+
+    <item
+        android:icon="@drawable/star_img"
+        android:id="@+id/fragmentStar"
+        android:title="Star" />
+</menu>

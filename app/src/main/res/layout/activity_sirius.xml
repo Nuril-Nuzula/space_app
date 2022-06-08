@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detilstar.SiriusActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_height="192dp"
+        android:layout_width="match_parent">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:toolbarId="@+id/toolbar"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+
+            app:contentScrim="?attr/colorPrimary">
+
+
+            <ImageView
+                android:id="@+id/img_Detail_planet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/sirius"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_width="match_parent">
+
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        tools:ignore="SpeakableTextPresentCheck">
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            tools:context=".Detail.DetailNewsIndoActivity">
+
+            <TextView
+                android:id="@+id/tv_DetailPlanet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sirius"
+                android:layout_marginLeft="12dp"
+                android:background="@color/white"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/white"
+                android:text="Sirius (/ˈsɪriəs/, atau α Canis Majoris (Huruf latin: Alpha Canis Majoris, disingkat Alpha CMa, α CMa)) adalah bintang paling terang di langit malam. Nama Sirius diambil dari kata Yunani Σείριος (Seirios), yang berarti 'berkilau'. Dengan magnitudo tampak −1.46, Sirius hampir dua kali lebih terang dari Canopus, bintang paling terang ke-2 di langit malam. Sirius adalah sebuah sistem bintang biner yang terdiri dari bintang deret utama dengan kelas spektrum A0 atau A1, yang disebut Sirius A, dan katai putih redup dengan kelas spektrum DA2, yang disebut Sirius B. Sirius A dan B saling mengorbit satu sama lain dengan waktu 50 tahun.[24]  Sirius tampak cerah diakibatkan luminositasnya dan kedekatannya terhadap Tata Surya. Pada jarak 2,64 parsec (8,6 tc), Sirius adalah salah satu tetangga terdekat Bumi. Sirius secara bertahap bergerak mendekat ke arah TatKoordinat: Peta langit 06h 45m 08.9173s, −16° 42′ 58.017″a Surya, sehingga kecerahannya akan meningkat dalam 60.000 tahun ke depan. Setelah itu, Sirius akan mulai menjauh, dan Sirius akan menjadi lebih redup, tetapi akan terus menjadi bintang paling terang di langit malam Bumi selama 210.000 tahun ke depan.[25]  Sirius A memiliki massa sekitar 2 kali massa Matahari (M☉) dan mempunyai magnitudo absolut +1.42. Bintang ini 25 kali lebih terang dari Matahari[12] tetapi memiliki luminositas yang jauh lebih rendah jika dibandingkan dengan bintang terang lainnya seperti Canopus atau Rigel. Sistem bintang ini memiliki usia antara 200 hingga 300 juta tahun.[12] Sistem ini awalnya terdiri dari 2 bintang kebiruan yang terang."
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_DetailPlanet" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
